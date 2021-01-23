@@ -1,21 +1,50 @@
 html,
 body {
   height: 100%;
+  width: 100%;
+  overflow: auto;
   background-color: #eee;
+}
+
+.body {
+  min-width: fit-content;
+}
+
+.nav {
+  float: right;
+  margin: 1em;
+}
+
+.container-main {
+  max-width: 45em;
 }
 
 .centered {
   text-align: center;
 }
 
+.center-overflow {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 .logo {
-  width: 18em;
+  max-width: 18em;
   padding-top: 1em;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .pic-logo {
-  margin: 0 15em;
-  padding-top: 5em;
+  /* margin: 0 12em; */
+  padding-top: 43%;
   padding-bottom: 3em;
 }
 
@@ -27,8 +56,6 @@ body {
   overflow: hidden;
   height: 251px;
   width: 251px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .profile-pic {
@@ -36,6 +63,11 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 100%;
+}
+
+.spacer {
+  width: 12em;
+  height: 1px;
 }
 
 .subtitle {

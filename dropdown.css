@@ -1,0 +1,21 @@
+.dropdown-toggle {
+  color: #000;
+  background-color: inherit;
+  border: 0;
+  padding: 0 !important;
+}
+
+.dropdown-toggle:after {
+  content: none;
+}
+
+.dropdown-menu {
+  margin-top: 1em;
+  margin-right: -18px;
+  opacity: 0;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}

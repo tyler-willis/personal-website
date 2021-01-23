@@ -1,0 +1,37 @@
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: #222;
+  border-radius: 5px;
+  display: block;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+  padding: 5px;
+  border-radius: 5px;
+  visibility: visible;
+  width: 46px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  background-color: #ddd;
+}
+
+.hamburger.is-active .line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}

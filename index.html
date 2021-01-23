@@ -3,30 +3,61 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="hamburger.css">
+        <link rel="stylesheet" href="dropdown.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".hamburger").click(function(){
+                    $(this).toggleClass("is-active");
+                });
+            });
+        </script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Tyler Willis</title>
     </head>
     <body>
-        <div class="container centered full-height">
+        <div class="nav">
+            <div class="dropdown>">
+                <button type="button" class="btn btn-primary dropdown-toggle hidden" data-toggle="dropdown">
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="./">Home</a>
+                    <a class="dropdown-item" href="/about">About</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">Projects</div>
+                    <a class="dropdown-item" href="/picross">Picross</a>
+                    <a class="dropdown-item" href="/terrain-generator">Terrain Generator</a>
+                </div>
+            </div>
+        </div>
+        <div class="container centered full-height container-main">
             <div class="row pic-logo">
                 <div class="col top">
-                    <img src="media/logo.png" class="logo">
+                    <img src="media/logo.png" class="logo center-overflow">
                 </div>
                 <div class="col">
-                    <div class="image-container">
+                    <div class="image-container center-overflow">
                         <img class="rounded-circle img-fluid" src="media/headshot1.jpg" alt="Tyler" height="300px" width="300px">
                     </div>
                 </div>
             </div>
             <h2 class="centered subtitle">Software Developer</h2>
             <div class="footer">
-                <a href="/media/Resume.pdf">Resume</a>
-                <a href="https://www.linkedin.com/in/ttwillis1/">LinkedIn</a>
-                <a href="https://github.com/tyler-willis">GitHub</a>
-                <a href="/picross">Picross</a>
+                <a href="/media/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="https://www.linkedin.com/in/ttwillis1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/tyler-willis" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </div>
     </body>
