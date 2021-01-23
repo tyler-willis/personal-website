@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+}
+
+.centered {
+  text-align: center;
+}
+
+.logo {
+  width: 18em;
+  padding-top: 1em;
+}
+
+.pic-logo {
+  margin: 0 15em;
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.image-container {
+  overflow: hidden;
+  height: 251px;
+  width: 251px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1.55em;
+  font-family: "Vollkorn";
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 2em;
+  width: 100%;
+}
+
+.footer a {
+  padding-left: 1em;
+  padding-right: 1em;
+}
