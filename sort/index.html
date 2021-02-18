@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="sort.css">
+
+    <script src="sort.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algoritms Visualized</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Sorting Algorithms Visualized</h1>
+        <label for="size">Size: </label>
+        <input id="size" type="number" value="25" min="3" max="200">
+        <label for="colored" >Color: </label>
+        <input id="colored" type="checkbox" checked>
+        <div>
+            <label for="slow">Slow: </label>
+            <input type="radio" id="slow" name="speed" value="400" onclick="setSpeed()">
+            <label for="medium">Medium: </label>
+            <input type="radio" id="medium" name="speed" value="200" onclick="setSpeed()" checked>
+            <label for="fast">Fast: </label>
+            <input type="radio" id="fast" name="speed" value="100" onclick="setSpeed()">
+        </div>
+        <button onclick="shuffle(); draw();">Shuffle</button>
+        <button onclick="bubbleSort()">Bubble Sort</button>
+        <button onclick="selectionSort()">Selection Sort</button>
+        <button onclick="insertionSort()">Insertion Sort</button>
+        <button onclick="mergeSort()">Merge Sort</button>
+    </div>
+    <div class="chart-container">
+        <div id="chart" height="500" width="1000">
+        </div>
+    </div>
+</body>
+</html>

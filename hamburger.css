@@ -11,6 +11,7 @@
 }
 
 .hamburger {
+  background-color: #eee;
   padding: 5px;
   border-radius: 5px;
   visibility: visible;
